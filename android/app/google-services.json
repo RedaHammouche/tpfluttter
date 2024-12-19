@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "650308617054",
+    "project_id": "mobile-f4f60",
+    "storage_bucket": "mobile-f4f60.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650308617054:android:d7e0349a15996493cc05cf",
+        "android_client_info": {
+          "package_name": "com.redahamouch.controle"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANGKaFJ9lLrRNHrcvdHHpzbPaz6-Rr9Bk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
