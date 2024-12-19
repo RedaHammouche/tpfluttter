@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 import 'firebase_options.dart'; // Import du fichier généré pour la configuration Firebase
 
 import 'screens/home_page.dart';
+
+import 'screens/login_page.dart';
 import 'screens/registre_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // Initialiser Firebase avec les options spécifiques à la plateforme
+
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform, // Utilisation des options en fonction de la plateforme
   );
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter RMAIDI WALID',
+      title: 'Mohamed Reda Hamouch  ',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,

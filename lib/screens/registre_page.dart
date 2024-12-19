@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'login_page.dart'; // Assurez-vous que le chemin est correct
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -33,12 +34,13 @@ class _RegisterPageState extends State<RegisterPage> {
           email: email,
           password: password,
         );
+
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Registration successful!')),
         );
 
         // Navigate to the login page
-        Navigator.pushNamed(context, '/login');
+        Navigator.pushReplacementNamed(context, '/login'); // Remplace la page actuelle
       } on FirebaseAuthException catch (e) {
         // Handle Firebase authentication errors
         String errorMessage;
@@ -145,23 +147,6 @@ class _RegisterPageState extends State<RegisterPage> {
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-// Placeholder for LoginPage
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Login'),
-      ),
-      body: const Center(
-        child: Text('Login Page (Implement as needed)'),
       ),
     );
   }

@@ -27,10 +27,10 @@ class _HomePageState extends State<HomePage> {
                 children: const [
                   CircleAvatar(
                     radius: 40,
-                    backgroundImage: AssetImage('assets/images/profile.jpg'),
+                    backgroundImage: AssetImage('assets/images/reeda.jpg'),
                   ),
                   SizedBox(height: 8),
-                  Text('RMAIDI WALID', style: TextStyle(color: Colors.white)),
+                  Text('Mohamed Reda Hamouche ', style: TextStyle(color: Colors.white)),
                 ],
               ),
             ),
